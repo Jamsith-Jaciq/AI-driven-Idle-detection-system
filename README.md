@@ -76,7 +76,28 @@ Proto-typeR/
 
 ## 🚀 Quick Start
 
-### 1. Install Dependencies
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Jamsith-Jaciq/AI-dirven-Idle-System-detection-system.git
+cd AI-dirven-Idle-System-detection-system
+```
+
+### 2. Create Virtual Environment
+
+**Windows:**
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+**Linux/Mac:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
 
 ```bash
 pip install flask sqlalchemy requests pynput psutil opencv-python numpy
@@ -89,7 +110,7 @@ pip install -r client/requirements.txt
 pip install -r camera/requirements.txt
 ```
 
-### 2. Start the Server
+### 4. Start the Server
 
 ```bash
 cd server
@@ -97,7 +118,7 @@ python app.py
 ```
 > Server runs at `http://localhost:5000`
 
-### 3. Start Camera Module (Optional)
+### 5. Start Camera Module (Optional)
 
 ```bash
 cd camera
@@ -105,7 +126,7 @@ python presence.py
 ```
 > Opens webcam and sends presence data to server
 
-### 4. Start Client Agent (On Each Lab PC)
+### 6. Start Client Agent (On Each Lab PC)
 
 ```bash
 cd client
@@ -113,7 +134,7 @@ python agent.py
 ```
 > Monitors activity and receives commands from server
 
-### 5. View Dashboard
+### 7. View Dashboard
 
 Open browser: **http://localhost:5000**
 
